@@ -29,6 +29,12 @@ const Navbar = () => {
         >
           Daygrid with CSS
         </Link>
+        <Link
+          to="/Dateclick"
+          className="block hover:text-blue-500 transition duration-200"
+        >
+          click/edit
+        </Link>
       </div>
     </div>
   );

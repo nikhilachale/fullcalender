@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Daygrid from "./components/Daygrid";
+
 import Daygridwithcss from "./components/Daygridwithcss";
 import Draganddrop from "./components/Draganddrop";
 import Fullyear from "./components/Fullyear";
@@ -8,6 +9,7 @@ import Navbar from "./components/Navbar";
 
 import "./styles.css";
 import Index from "./components/Index";
+import SelectableCalendar from "./components/SelectableCalendar";
 
 export default function App() {
   return (
@@ -21,6 +23,7 @@ export default function App() {
         <Route path="/Draganddrop" element={<Draganddrop />} />
         <Route path="/Fullyear" element={<Fullyear />} />
         <Route path="/Daygridwithcss" element={<Daygridwithcss />} />
+        <Route path="/Dateclick" element={<SelectableCalendar/>} />
       </Routes>
     </div>
   );
