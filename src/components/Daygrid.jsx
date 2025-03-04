@@ -1,16 +1,11 @@
 import React from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
+import events from "../data/Events.json"; 
 
 const Daygrid = () => {
-  const events = [
-    { title: "Meeting Name", date: "2025-03-01" },
-    { title: "Conference", date: "2025-03-05" },
-    { title: "Workshop", date: "2025-03-10" },
-  ];
-
   return (
-    <div className="h-bg p-4">
+    <div>
       <FullCalendar
         plugins={[dayGridPlugin]}
         initialView="dayGridMonth"

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fullcalendar/bootstrap5':
+    specifier: ^6.1.15
+    version: 6.1.15(@fullcalendar/core@6.1.15)
   '@fullcalendar/core':
     specifier: 6.1.15
     version: 6.1.15
@@ -20,6 +23,12 @@ dependencies:
   '@fullcalendar/react':
     specifier: 6.1.15
     version: 6.1.15(@fullcalendar/core@6.1.15)(react-dom@19.0.0)(react@19.0.0)
+  bootstrap:
+    specifier: '5'
+    version: 5.3.3(@popperjs/core@2.11.8)
+  bootstrap-icons:
+    specifier: ^1.11.3
+    version: 1.11.3
   fullcalendar:
     specifier: 6.1.15
     version: 6.1.15
@@ -1730,6 +1739,14 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
+  /@fullcalendar/bootstrap5@6.1.15(@fullcalendar/core@6.1.15):
+    resolution: {integrity: sha512-g+Yf6n+AIIchBAZY7D9MZDDf7EUUnZyfROE9WdRIfj6kdSTRrWdJqozlGQ2lWvsfn/+AayGWn+e21L6KNsL+1Q==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.15
+    dependencies:
+      '@fullcalendar/core': 6.1.15
+    dev: false
+
   /@fullcalendar/core@6.1.15:
     resolution: {integrity: sha512-BuX7o6ALpLb84cMw1FCB9/cSgF4JbVO894cjJZ6kP74jzbUZNjtwffwRdA+Id8rrLjT30d/7TrkW90k4zbXB5Q==}
     dependencies:
@@ -2183,6 +2200,10 @@ packages:
       source-map: 0.7.4
       webpack: 5.98.0
       webpack-dev-server: 4.15.2(webpack@5.98.0)
+    dev: false
+
+  /@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
 
   /@rollup/plugin-babel@5.3.1(@babel/core@7.26.9)(rollup@2.79.2):
@@ -3543,6 +3564,18 @@ packages:
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    dev: false
+
+  /bootstrap-icons@1.11.3:
+    resolution: {integrity: sha512-+3lpHrCw/it2/7lBL15VR0HEumaBss0+f/Lb6ZvHISn1mlK83jjFpooTLsMWbIjJMDjDjOExMsTxnXSIT4k4ww==}
+    dev: false
+
+  /bootstrap@5.3.3(@popperjs/core@2.11.8):
+    resolution: {integrity: sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
+    dependencies:
+      '@popperjs/core': 2.11.8
     dev: false
 
   /brace-expansion@1.1.11:

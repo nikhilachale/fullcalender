@@ -7,23 +7,28 @@ import Draganddrop from "./components/Draganddrop";
 import Fullyear from "./components/Fullyear";
 import Navbar from "./components/Navbar";
 
-import "./styles.css";
+
+
 import Index from "./components/Index";
 import SelectableCalendar from "./components/SelectableCalendar";
+import ThemedCalendar from "./components/ThemedCalendar";
 
 export default function App() {
   return (
-    <div className="App ">
+    <div className=" ">
       <Navbar />
+      
 
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/Daygrid" element={<Daygrid />} />
-        <Route path="/Daygrid" element={<Daygrid />} />
-        <Route path="/Draganddrop" element={<Draganddrop />} />
-        <Route path="/Fullyear" element={<Fullyear />} />
-        <Route path="/Daygridwithcss" element={<Daygridwithcss />} />
-        <Route path="/Dateclick" element={<SelectableCalendar/>} />
+
+        <Route path="/daygrid" element={<Daygrid />} />
+        <Route path="/draganddrop" element={<Draganddrop />} />
+        <Route path="/fullyear" element={<Fullyear />} />
+        <Route path="/daygridwithcss" element={<Daygridwithcss />} />
+        <Route path="/dateclick" element={<SelectableCalendar/>} />
+        <Route path="/theme" element={<ThemedCalendar/>} />
+
       </Routes>
     </div>
   );
